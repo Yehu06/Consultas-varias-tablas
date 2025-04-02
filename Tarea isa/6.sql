@@ -1,6 +1,6 @@
 --6--
 
-SELECT lugar.lugar, jesuita.nombre AS Jesuita
+SELECT lugar.lugar, jesuita.nombre
 FROM lugar
 LEFT JOIN visita ON lugar.ip = visita.ip
 LEFT JOIN jesuita ON visita.idJesuita = jesuita.idJesuita;
